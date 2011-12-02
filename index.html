@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>    
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>ESF Spike</title>
+
+        <style type="text/css">
+        body {
+            font-family: 'Helvetica', sans-serif;
+        }
+        #esfTable tr td {
+            background-color: #000;
+            color: #fff;
+        }
+        #esfTable tr td {
+            text-align: center;
+        }        
+        #esfTable tr td.critical {
+            background-color: red;
+        }
+        table#esfTable tr td.novalue {
+            background-color: #ccc;
+        }
+        table#esfTable tr td div#mouseover {
+            background-color: #EAEB80;
+            border: 1px solid #000;
+            color: #000;
+            display: none;
+            top: -50px auto;
+            left: auto;
+            z-index: 1000;
+            position: absolute;
+            width: 300px;
+        }
+        </style>
+                
+        <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="esf.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script type='text/javascript' src='tipsy/src/javascripts/jquery.tipsy.js'></script>
+        <link rel="stylesheet" href="tipsy/src/stylesheets/tipsy.css" type="text/css" />
+        
+    </head>
+    
+    <body>
+        <center>
+            <div id="esf"></div>
+        </center>        
+    </body>
+</html>
